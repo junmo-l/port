@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 10px;
+    font-family: 'Kanit', sans-serif;
+}
+#wrap {
+    margin: 0 auto;
+    /* border: solid 1px red; */
+    padding: 20px;
+    width: 1500px;
+    background-color: rgb(219, 219, 219);
+}
+
+header {
+    /* border: solid 1px red; */
+    padding: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+section {
+    /* border: solid 1px red; */
+    padding: 20px;
+    margin-bottom: 20px;
+    clear: both;
+}
+article {
+    /* border: solid 1px red; */
+    padding: 20px 0;
+    margin-bottom: 20px;
+    overflow: hidden;
+
+}
+footer {
+    /* border: solid 1px red; */
+    padding: 20px;
+    margin-bottom: 20px;
+    clear: both;
+    height: 40rem;
+    background-color: rgb(241, 237, 237);
+}
+
+ul {
+    list-style: none;
+    
+}
+
+#title {
+    background-image: url(../portfolio/images/icons/A.svg);
+    background-repeat: no-repeat;
+    line-height: 7rem;
+    padding: 0.5rem;
+    padding-left: 9rem;
+    font-size: 2.5rem;
+    float: left;
+}
+
+.divTitle {
+    float: left;
+}
+
+.divMenu {
+    float: right;
+}
+
+.menu {
+    /* border: 1px solid gray; */
+    /* text-align: center;     */
+    /* align-items: center; */
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.menu > li {
+    margin-right: 5rem;
+    float: left;
+}
+
+a{
+    color: black;
+    font-size: 1.5rem;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.menu > li:hover a{
+    color: purple;
+}
+
+#section {
+    margin: 0 auto;
+    height: 600px;
+    border: 1px solid white;
+    background: url(../portfolio/images/wallpaperbetter\ \(2\).jpg);
+    background-size: 100% 100%;
+}
+
+.maintitle {
+    margin: 380px 10px;
+    padding: 20px 20px 30px 20px;
+    background-color: rgb(255,255,255,0.3);
+    color: whitesmoke;
+}
+
+.maintitle > p,h1 {
+    font-size: 2rem;
+}
+
+
+
+#left {
+    margin: 0 auto;
+    width: 32%;
+    height: 400px;
+    margin-bottom: 20px;
+    margin: 0px 30px 20px 0px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    transition: all linear 200ms;
+}
+
+#left img {
+    width: 46rem;
+    height: 38rem;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+
+
+.caption {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    /* background: rgba(0, 0, 0, 0.5); */
+    transition: all linear 300ms;
+    width: 46rem;
+    height: 38rem;
+    color: rgba(255, 255, 255, 0);
+    text-align: center;
+    z-index: 100px;
+    /* visibility: hidden; */
+    transition: all linear 200ms;
+  }
+
+  .caption h1, p{
+    position: relative;
+    padding: 5px;
+    top: 20%;
+    font-size: 2rem;
+  }
+
+.movieList > li:hover .caption {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(0,0,0,0.3);
+}
+#left:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#right {
+    margin: 0 auto;
+    width: 32%;
+    height: 400px;
+    margin-bottom: 20px;
+    float: right;
+    position: relative;
+    overflow: hidden;
+    transition: all linear 200ms;
+}
+
+#right:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#right img {
+    width: 46rem;
+    height: 38rem;
+    /* width: 48rem;
+    height: 40rem; */
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    transition: all linear 200ms;
+}
+
+#right img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+.fLight {
+    /* border: solid 1px red; */
+    width: 60%;
+    margin: 20px 0 0 50px;
+    float: left;
+
+}
+
+.fLight > h3 {
+    margin-left: 15px;
+    font-size: 2rem;
+    letter-spacing: 0.8rem;
+}
+
+.flUl > li {
+    border-bottom: solid 1px lightgray;
+    width: 40%;
+    margin: 20px 20px 20px 0;
+    padding: 10px 10px 15px 10px;
+    font-size: 1.5rem;
+    color: rgb(196, 193, 193);
+}
+
+.fluLi {
+    margin: 20px;
+    float: left;
+}
+
+.flUl > li:last-child {
+    border-bottom: solid 1px lightgray;
+    width: 85%;
+}
+
+#send {
+    margin: 1rem 1rem 6rem 0rem;
+    padding: 1rem 2rem;
+    color: white;
+    background-color: #555555;
+    border: none;
+    border-radius: 0.2rem;
+    letter-spacing: 0.3rem;
+    font-size: 3px;
+    cursor: pointer;
+}
+
+#send:hover {
+    background-color: rgb(131, 128, 128);
+}
+
+.fLight > p {
+    font-size: 1.5rem;
+    color: rgb(196, 193, 193);
+}
+
+.fRight {
+    /* border: solid red 1px;     */
+    width: 30%;
+    margin: 20px 0 0 0;
+    float: right;
+}
+.fRight > h3{
+    font-size: 2rem;
+    letter-spacing: 0.8rem;
+    margin-bottom: 20px;
+}
+
+.frUl > li{
+    border: rgb(196, 193, 193) solid 1px;
+    border-radius: 0.5rem;
+    float: left;
+    margin: 10px 20px 10px 10px;
+    padding: 15px;
+    width: 10px;
+    height: 10px;
+    position: relative;
+}
+
+.frUl > li:hover{
+    background-color: rgb(218, 215, 215);
+}
+.frUl > li svg{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    fill: #555555;
+}
+
+.frUl > li svg:hover, li svg:focus{
+    
+    animation: svg 0.15s linear infinite;
+}
+
+@keyframes svg {
+    50% {
+        transform: translateX(3px) rotate(3deg);
+    }
+    100% {
+        transform: translateX(-3px) rotate(-3deg);
+
+    }
+}
+
