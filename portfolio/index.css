@@ -70,7 +70,7 @@ ul {
     /* border: 1px solid gray; */
     /* text-align: center;     */
     /* align-items: center; */
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     padding: 1rem;
 }
 
@@ -160,6 +160,7 @@ a:link {
 .movieList > li:hover .caption {
     color: rgba(255, 255, 255, 1);
     background-color: rgba(0,0,0,0.3);
+    text-shadow: 2px 2px black;
 }
 .movieList > li:hover .caption p {
     color: yellow;
