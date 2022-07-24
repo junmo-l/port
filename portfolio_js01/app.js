@@ -76,7 +76,40 @@
 // console.log(player.name);
 // player.sayHello("msoso");
 
-function plus(a, b) {
-  console.log(a + b);
-}
-plus(5, 6);
+// const player = {
+//   name: "junmo",
+//   age: 27,
+// };
+// player.name = "junmolee";
+// console.log(player);
+// player.sexy = true;
+// console.log(player);
+
+// function plus(a, b) {
+//   console.log(a + b);
+// }
+// plus(100, 200);
+
+const claculator = {
+  plus: function (a, b) {
+    console.log(a + b);
+  },
+  minus: function (a, b) {
+    console.log(a - b);
+  },
+  multi: function (a, b) {
+    console.log(a * b);
+  },
+  divide: function (a, b) {
+    console.log(a / b);
+  },
+  powerOf: function (a, b) {
+    console.log(a ** b);
+  },
+};
+
+claculator.plus(5, 5);
+claculator.minus(5, 5);
+claculator.multi(5, 5);
+claculator.divide(5, 5);
+claculator.powerOf(5, 5);
