@@ -1,5 +1,5 @@
 body {
-  background-color: tomato;
+  /* background-color: beige; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,4 +9,12 @@ canvas {
   width: 800px;
   height: 800px;
   border: 5px solid black;
+  /* background-color: white; */
+}
+
+.color_option {
+  border: 2px solid beige;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
 }
