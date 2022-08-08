@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<style>
+    .title {
+        font-size: xx-large;
+        font-weight: bold;
+    }
+
+    .select {
+        font-size: x-large;
+        font-weight: bolder;
+    }
+</style>
+
+<head>
+    <title>Vanilla Challenge</title>
+    <meta charset="UTF-8" />
+</head>
+
+<body>
+    <p class="title">Random Numver Game</p>
+
+    <form id="selectNum1">
+        <p class="select">Generate a number between 0 and
+            <input type="number" min="1" id="num1">
+        </p>
+    </form>
+
+    <form id="selectNum2">
+        <p>Guess the unmber: <input type="number" min="1" id="num2"><button id="but">play!</button></p>
+    </form>
+    <p id="value1"></p>
+    <p id="value2"></p>
+    <script src="index02.js"></script>
+</body>
+
+</html>
