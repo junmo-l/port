@@ -13,7 +13,7 @@ function onNum1Submit(event) {
 }
 
 function onNum2Submit(event) {
-  let check = parseInt(num1.value) >= parseInt(num2.value);
+  let check = parseInt(num1.value) == parseInt(num2.value);
   event.preventDefault();
   if (check) {
     randomNumber = Math.ceil(Math.random() * parseInt(num1.value));
@@ -22,7 +22,7 @@ function onNum2Submit(event) {
     alert(`${num1.value}보다 작은 값을 넣어주세요.`);
   }
 
-  if (parseInt(num2.value) > randomNumber) {
+  if (parseInt(num2.value) == randomNumber) {
     value1.innerText = `You chose : ${num2.value}, the machine chose : ${randomNumber}.`;
     value2.innerText = "You Winner!";
   } else {
