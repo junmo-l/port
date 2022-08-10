@@ -6,8 +6,8 @@
 
 html,
 body {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
 }
 
 body {
@@ -15,33 +15,73 @@ body {
 }
 
 @media all and (max-width: 767px) {
-  img,
-  map {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80vw;
-    height: 38vw;
+  #body-map {
   }
 
-  #body-map {
-    transform: rotate(90deg);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  #world-map-wrap {
   }
+
+  #world-map {
+  }
+
+  #image-map-wrap {
+  }
+
+  map {
+  }
+
+  /* #svg-all > div > svg {
+    width: 5vw;
+    height: 5vw;
+    filter: drop-shadow(1px 2px 1px gray);
+  }
+
+  #svg1 svg {
+    position: absolute;
+    right: 25vw;
+    top: 5vw;
+    filter: invert(46%) sepia(98%) saturate(493%) hue-rotate(333deg)
+      brightness(94%) contrast(94%);
+    fill: rgb(59, 87, 226);
+  }
+}
+
+.buzzAnim {
+  animation: svg 0.2s linear infinite;
+}
+
+@keyframes svg {
+  50% {
+    transform: translateX(2px) rotate(10deg);
+  }
+  100% {
+    transform: translateX(-2px) rotate(-10deg);
+  } */
 }
 
 /* Tablet (가로폭 768px 이상, 1023px 이하) */
 @media all and (min-width: 768px) and (max-width: 1023px) {
   /* 브라우저 가로폭이 768~1023px일때 적용될 css (태블릿) */
+  * {
+    width: 50%;
+    height: 50%;
+  }
+  #body-map {
+    position: absolute;
+    /* text-align: center; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #world-map {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 /* PC Desktop (가로폭 1024 이상) */
 @media all and (min-width: 1024px) {
-  img,
+  /* img,
   map {
     position: absolute;
     top: 50%;
@@ -53,6 +93,14 @@ body {
   #body-map {
     transform: rotate(90deg);
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } */
+
+  #body-map {
+    position: absolute;
+    /* text-align: center; */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
