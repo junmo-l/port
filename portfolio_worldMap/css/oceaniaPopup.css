@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#article-oceania-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  border: solid 0.5px palevioletred;
+  border-radius: 10px;
+  width: 40vw;
+  height: 38vw;
+  background-color: aliceblue;
+}
+
+#popup-oceania-wrap {
+  padding: 20px;
+}
+
+#popup-oceania-wrap > div {
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.oceania-top {
+  width: 35vw;
+  height: 5vw;
+  /* border: solid 1px red; */
+  position: relative;
+}
+
+.thaliand {
+  width: 5vw;
+  height: 5vw;
+  float: left;
+}
+
+.oceania-top > p {
+  margin: 1vh;
+}
+.oceania-top > p,
+h1 {
+  text-align: center;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.oceania-bottom {
+  width: 35vw;
+  height: 5vw;
+  border: solid 1px palevioletred;
+  border-radius: 10px;
+  overflow: auto;
+  text-align: justify;
+  padding: 10px;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  line-height: 20px;
+  background-color: white;
+}
+
+.oceania-bottom::-webkit-scrollbar {
+  width: 10px;
+  background-color: black;
+  border-radius: 10px;
+}
+.oceania-bottom::-webkit-scrollbar-thumb {
+  background-color: palevioletred;
+  border-radius: 10px;
+}
+.oceania-bottom::-webkit-scrollbar-track {
+  background-color: white;
+  border-radius: 10px;
+}
+
+#button-oceania {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  width: 30px;
+  height: 30px;
+  display: block;
+}
