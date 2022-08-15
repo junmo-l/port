@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- <link rel="stylesheet" href="./css/index.css" /> -->
+  <script src="./js/js.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
   <link rel="stylesheet" href="./css/index.css">
@@ -21,9 +21,25 @@
 
 <body>
   <header>
-    <p>World map</p>
+    <div class="wrapper">
+      <a href="#" class="btn">
+        <div class="wave1"></div>
+        <div class="wave2"></div>
+        <img class="start-logo" src="./images/logo03.png">
+      </a>
+    </div>
   </header>
+
   <section>
+    <a href="#" alt="return">
+      <div id="logo"></div>
+    </a>
+    <div class='box'>
+      <div class='wave -one'></div>
+      <div class='wave -two'></div>
+      <div class='wave -three'></div>
+      <div class='title'></div>
+    </div>
     <div id="body-map">
       <img id="world-map" src="./images/worldmap.png" usemap="#image-map" />
       <map name="image-map" id="image-map">
@@ -147,12 +163,12 @@
       <div id="wrap">
         <div>
           <ul class="slider">
-            <li><img src="./images/image04_paris.jpg" alt="풍경1"></li>
-            <li><img src="./images/Australia02.jpg" alt="풍경2"></li>
-            <li><img src="./images/Australia03.jpg" alt="풍경3"></li>
-            <li><img src="./images/Australia04.jpg" alt="풍경4"></li>
-            <li><img src="./images/Australia05.jpg" alt="풍경5"></li>
-            <li><img src="./images/Australia06.jpg" alt="풍경6"></li>
+            <li><img src="./images/france02.jpg" alt="풍경1"></li>
+            <li><img src="./images/france03.jpg" alt="풍경2"></li>
+            <li><img src="./images/france04.jpg" alt="풍경3"></li>
+            <li><img src="./images/france05.jpg" alt="풍경4"></li>
+            <li><img src="./images/france06.jpg" alt="풍경5"></li>
+            <li><img src="./images/france07.jpg" alt="풍경6"></li>
           </ul>
         </div>
       </div>
@@ -192,12 +208,12 @@
       <div id="wrap">
         <div>
           <ul class="slider">
-            <li><img src="./images/img02_africa.jpg" alt="풍경1"></li>
-            <li><img src="./images/Australia02.jpg" alt="풍경2"></li>
-            <li><img src="./images/Australia03.jpg" alt="풍경3"></li>
-            <li><img src="./images/Australia04.jpg" alt="풍경4"></li>
-            <li><img src="./images/Australia05.jpg" alt="풍경5"></li>
-            <li><img src="./images/Australia06.jpg" alt="풍경6"></li>
+            <li><img src="./images/africa02.jpg" alt="풍경1"></li>
+            <li><img src="./images/africa03.jpg" alt="풍경2"></li>
+            <li><img src="./images/africa04.jpg" alt="풍경3"></li>
+            <li><img src="./images/africa05.jpg" alt="풍경4"></li>
+            <li><img src="./images/africa06.jpg" alt="풍경5"></li>
+            <li><img src="./images/africa07.jpg" alt="풍경6"></li>
           </ul>
         </div>
       </div>
@@ -234,12 +250,12 @@
       <div id="wrap">
         <div>
           <ul class="slider">
-            <li><img src="./images/img02_africa.jpg" alt="풍경1"></li>
-            <li><img src="./images/Australia02.jpg" alt="풍경2"></li>
-            <li><img src="./images/Australia03.jpg" alt="풍경3"></li>
-            <li><img src="./images/Australia04.jpg" alt="풍경4"></li>
-            <li><img src="./images/Australia05.jpg" alt="풍경5"></li>
-            <li><img src="./images/Australia06.jpg" alt="풍경6"></li>
+            <li><img src="./images/US02.jpg" alt="풍경1"></li>
+            <li><img src="./images/US03.jpg" alt="풍경2"></li>
+            <li><img src="./images/US04.jpg" alt="풍경3"></li>
+            <li><img src="./images/US05.jpg" alt="풍경4"></li>
+            <li><img src="./images/US06.jpg" alt="풍경5"></li>
+            <li><img src="./images/US07.jpg" alt="풍경6"></li>
           </ul>
         </div>
       </div>
@@ -277,12 +293,12 @@
       <div id="wrap">
         <div>
           <ul class="slider">
-            <li><img src="./images/img02_africa.jpg" alt="풍경1"></li>
-            <li><img src="./images/Australia02.jpg" alt="풍경2"></li>
-            <li><img src="./images/Australia03.jpg" alt="풍경3"></li>
-            <li><img src="./images/Australia04.jpg" alt="풍경4"></li>
-            <li><img src="./images/Australia05.jpg" alt="풍경5"></li>
-            <li><img src="./images/Australia06.jpg" alt="풍경6"></li>
+            <li><img src="./images/brasil02.jpg" alt="풍경1"></li>
+            <li><img src="./images/brasil03.jpg" alt="풍경2"></li>
+            <li><img src="./images/brasil04.jpg" alt="풍경3"></li>
+            <li><img src="./images/brasil05.jpg" alt="풍경4"></li>
+            <li><img src="./images/brasil06.jpg" alt="풍경5"></li>
+            <li><img src="./images/brasil07.jpg" alt="풍경6"></li>
           </ul>
         </div>
       </div>
@@ -306,6 +322,7 @@
       </div>
     </div>
   </article>
+
   <!-- <div id="svg-all">
     <div id="svg1">
       <svg class="pin1" viewBox="0 0 91 91">
@@ -365,6 +382,19 @@
         speed: 1,
         randomStart: true,
         autoHover: true,
+      });
+    });
+
+    $(function () {
+
+      $('.wrapper').on('click', function () {
+        $('.wrapper').fadeOut(1000);
+        $('section').fadeIn(2000);
+      });
+
+      $('#logo').on('click', function () {
+        $('section').fadeOut(1000);
+        $('.wrapper').fadeIn(2000);
       });
     });
   </script>
