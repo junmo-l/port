@@ -18,7 +18,8 @@ setInterval(localTime, 1000);
 
 function aClick(e) {
   e.preventDefault();
-  document.getElementById("article-asia-wrap").style.display = "block";
+  // document.getElementById("article-asia-wrap").style.display = "block";
+  // document.querySelector(".slider").reloadeSlider();
   document.getElementById("logo").style.display = "none";
   worldMapAsia.style.opacity = "0.5";
   document.body.style.backgroundColor = "rgba(0, 0, 0, 0.1)";
@@ -30,4 +31,34 @@ function btnAsia() {
   document.body.style.backgroundColor = "aliceblue";
 }
 
+// function pinOpen() {
+//   document.querySelector("#svg-asia1 .pin1, #svg-asia2 > .pin1").style.display =
+//     "block";
+// }
+// function pinClose() {
+//   document.querySelector("#svg-asia1 .pin1, #svg-asia2 .pin1").style.display =
+//     "none";
+// }
+
+function pinOpen() {
+  document.querySelector("#svg-asia1 .pin1").style.display = "block";
+  document.querySelector("#svg-asia2 .pin1").style.display = "block";
+}
+function pinClose() {
+  document.querySelector("#svg-asia1 .pin1").style.display = "none";
+  document.querySelector("#svg-asia2 .pin1").style.display = "none";
+}
+
+asiaClick.addEventListener("mouseover", pinOpen);
+asiaClick.addEventListener("mouseout", pinClose);
 asiaClick.addEventListener("click", aClick);
+// $(function () {
+// $("#asia").on("click", function () {
+//   $("").fadeOut(1000);
+//   $("article-asia-wrap").fadeIn(2000);
+// });
+// $("#logo").on("click", function () {
+//   $("section").fadeOut(1000);
+//   $(".wrapper").fadeIn(2000);
+// });
+// });

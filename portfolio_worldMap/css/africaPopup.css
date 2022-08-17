@@ -16,11 +16,11 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   overflow: hidden;
-  border: solid 0.5px palevioletred;
+  border: solid 0.5px #FCB008;
   border-radius: 10px;
   width: 40vw;
   height: 38vw;
-  background-color: aliceblue;
+  background: linear-gradient(#FCB008, #AB4D01);
   /* display: none; */
 }
 
@@ -28,7 +28,7 @@ body {
   padding: 20px;
 }
 
-#popup-africa-wrap > div {
+#popup-africa-wrap>div {
   margin: 0 auto;
   margin-bottom: 20px;
 }
@@ -44,12 +44,14 @@ body {
   width: 5vw;
   height: 5vw;
   float: left;
+  filter: drop-shadow(1px 2px 1px black);
 }
 
-.africa-top > p {
+.africa-top>p {
   margin: 1vh;
 }
-.africa-top > p,
+
+.africa-top>p,
 h1 {
   text-align: center;
   font-size: xx-large;
@@ -59,7 +61,7 @@ h1 {
 .africa-bottom {
   width: 35vw;
   height: 5vw;
-  border: solid 1px palevioletred;
+  border: solid 1px #AB4D01;
   border-radius: 10px;
   overflow: auto;
   text-align: justify;
@@ -67,7 +69,7 @@ h1 {
   letter-spacing: 1px;
   word-spacing: 2px;
   line-height: 20px;
-  background-color: white;
+  background-color: #FCEEE0;
 }
 
 .africa-bottom::-webkit-scrollbar {
@@ -75,10 +77,12 @@ h1 {
   background-color: black;
   border-radius: 10px;
 }
+
 .africa-bottom::-webkit-scrollbar-thumb {
-  background-color: palevioletred;
+  background-color: #6E442C;
   border-radius: 10px;
 }
+
 .africa-bottom::-webkit-scrollbar-track {
   background-color: aliceblue;
   border-radius: 10px;

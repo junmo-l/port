@@ -30,4 +30,14 @@ function btnOceania() {
   worldMapOceania.style.opacity = "1";
   document.body.style.backgroundColor = "aliceblue";
 }
+
+function pinOpen() {
+  document.querySelector(".pin2").style.display = "block";
+}
+function pinClose() {
+  document.querySelector(".pin2").style.display = "none";
+}
+
+oceaniaClick.addEventListener("mouseover", pinOpen);
+oceaniaClick.addEventListener("mouseout", pinClose);
 oceaniaClick.addEventListener("click", aClick);

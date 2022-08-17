@@ -10,13 +10,25 @@ body {
   height: 100%;
 }
 
+article>p,
+h1 {
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+
+article>div>div:nth-child(1) {
+  color: white;
+  text-shadow: 2px 2px 2px black;
+
+}
+
 body {
   background-color: #f0f8ff;
 }
 
 article {
   display: none;
-  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3); */
 }
 
 section {
@@ -33,6 +45,11 @@ section {
 
 .start-logo {
   position: relative;
+  transition: all 1.5s linear;
+}
+
+.start-logo:hover {
+  transform: scale(1.5);
 }
 
 .btn {
@@ -50,7 +67,7 @@ section {
 }
 
 .btn:hover {
-  transition: 3s;
+  transition: 2s;
   border-radius: 50%;
 }
 
@@ -73,7 +90,6 @@ section {
 .btn:hover>.wave2 {
   top: 30%;
 }
-
 
 .wave1 {
   content: "";
@@ -131,23 +147,23 @@ section {
   /* top: 1%; */
   left: 45%;
   width: 440px;
-  height: 440px;
+  height: 300px;
   background: url("../images/logo02.png") no-repeat -30px -30px;
   background-size: cover;
   z-index: 1;
   filter: drop-shadow(1px 2px 1px gray);
+  transition: all 0.5s linear;
 }
 
 #logo:hover {
-  transition: 0.5s;
   transform: scale(1.2);
 }
 
 /* 배경물결 */
 .box {
-  overflow: hidden;
   width: 100%;
-  height: 51.7vw;
+  /* height: 51.7vw; */
+  height: 1329px;
   border-radius: 5px;
   box-shadow: 0 2px 30px rgba(black, 0.2);
   background: lighten(#f0f4c3, 10%);
@@ -159,11 +175,13 @@ section {
 .wave {
   opacity: 0.4;
   position: absolute;
-  top: 20%;
-  left: 35%;
+  top: 25%;
+  left: 38%;
   background: #0af;
-  width: 50vw;
-  height: 50vw;
+  /* width: 50vw;
+  height: 50vw; */
+  width: 1200px;
+  height: 1200px;
   margin-left: -250px;
   margin-top: -250px;
   transform-origin: 50% 48%;
@@ -191,73 +209,86 @@ section {
   }
 }
 
-
-
 /* 월드맵 핀 */
-/* #svg-all > div > svg {
-    width: 5vw;
-    height: 5vw;
-    filter: drop-shadow(1px 2px 1px gray);
+#svg-all>div>svg {
+  width: 70px;
+  height: 70px;
+  filter: drop-shadow(1px 2px 1px gray);
+  display: none;
+}
+
+#svg-asia1 svg {
+  position: absolute;
+  right: 210px;
+  top: 53px;
+  filter: invert(46%) sepia(98%) saturate(493%) hue-rotate(333deg) brightness(94%) contrast(94%);
+  fill: #008AFC;
+}
+
+#svg-asia2 svg {
+  position: absolute;
+  right: 225px;
+  top: 220px;
+  filter: invert(46%) sepia(98%) saturate(493%) hue-rotate(333deg) brightness(94%) contrast(94%);
+  fill: #2DC463;
+}
+
+#svg-oceania svg {
+  position: absolute;
+  right: 70px;
+  bottom: 150px;
+  filter: invert(46%) sepia(98%) saturate(493%) hue-rotate(333deg) brightness(94%) contrast(94%);
+  fill: #2DC463;
+}
+
+#svg-europe svg {
+  position: absolute;
+  right: 480px;
+  top: 150px;
+  filter: invert(46%) sepia(98%) saturate(493%) hue-rotate(333deg) brightness(94%) contrast(94%);
+  fill: #008AFC;
+}
+
+#svg-africa svg {
+  position: absolute;
+  right: 450px;
+  top: 350px;
+  filter: invert(46%) sepia(98%) saturate(493%) hue-rotate(333deg) brightness(94%) contrast(94%);
+  fill: #F7BCFF;
+}
+
+#svg-nAmerica svg {
+  position: absolute;
+  left: 180px;
+  top: 150px;
+  filter: invert(46%) sepia(98%) saturate(493%) hue-rotate(333deg) brightness(94%) contrast(94%);
+  fill: tomato;
+}
+
+#svg-sAmerica svg {
+  position: absolute;
+  left: 330px;
+  bottom: 180px;
+  filter: invert(46%) sepia(98%) saturate(493%) hue-rotate(333deg) brightness(94%) contrast(94%);
+  fill: #F68A31;
+}
+
+/* #svg-africa:hover {
+  animation: svg 0.2s linear infinite;
+} */
+
+#svg-all>div>svg {
+  animation: svg 0.2s linear infinite;
+}
+
+
+
+@keyframes svg {
+  50% {
+    transform: translateX(2px) rotate(10deg);
   }
 
-  #svg1 svg {
-    position: absolute;
-    right: 31vw;
-    top: 12vw;
-    filter: invert(46%) sepia(98%) saturate(493%) hue-rotate(333deg)
-      brightness(94%) contrast(94%);
-    fill: rgb(59, 87, 226);
+  100% {
+    transform: translateX(-2px) rotate(-10deg);
   }
-  #svg2 svg {
-    position: absolute;
-    right: 45vw;
-    top: 14vw;
-    filter: invert(46%) sepia(98%) saturate(493%) hue-rotate(333deg)
-      brightness(94%) contrast(94%);
-    fill: rgb(59, 87, 226);
-  }
-  #svg3 svg {
-    position: absolute;
-    right: 65vw;
-    top: 13vw;
-    filter: invert(46%) sepia(98%) saturate(493%) hue-rotate(333deg)
-      brightness(94%) contrast(94%);
-    fill: rgb(59, 87, 226);
-  }
-  #svg4 svg {
-    position: absolute;
-    right: 58vw;
-    top: 28vw;
-    filter: invert(46%) sepia(98%) saturate(493%) hue-rotate(333deg)
-      brightness(94%) contrast(94%);
-    fill: rgb(59, 87, 226);
-  }
-  #svg5 svg {
-    position: absolute;
-    right: 31vw;
-    top: 12vw;
-    filter: invert(46%) sepia(98%) saturate(493%) hue-rotate(333deg)
-      brightness(94%) contrast(94%);
-    fill: rgb(59, 87, 226);
-  }
-  #svg6 svg {
-    position: absolute;
-    right: 31vw;
-    top: 12vw;
-    filter: invert(46%) sepia(98%) saturate(493%) hue-rotate(333deg)
-      brightness(94%) contrast(94%);
-    fill: rgb(59, 87, 226);
-  }
-
-  .buzzAnim {
-    animation: svg 0.2s linear infinite;
-  }
-
-  @keyframes svg {
-    50% {
-      transform: translateX(2px) rotate(10deg);
-    }
-    100% {
-      transform: translateX(-2px) rotate(-10deg);
-    }
-  } */
+}

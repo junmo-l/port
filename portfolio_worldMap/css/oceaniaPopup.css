@@ -16,11 +16,11 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   overflow: hidden;
-  border: solid 0.5px palevioletred;
+  border: solid 0.5px #067EA9;
   border-radius: 10px;
   width: 40vw;
   height: 38vw;
-  background-color: aliceblue;
+  background: linear-gradient(#CDCDC3, #4484B6);
   /* display: none; */
 }
 
@@ -28,7 +28,7 @@ body {
   padding: 20px;
 }
 
-#popup-oceania-wrap > div {
+#popup-oceania-wrap>div {
   margin: 0 auto;
   margin-bottom: 20px;
 }
@@ -40,16 +40,18 @@ body {
   position: relative;
 }
 
-.thaliand {
+.australia {
   width: 5vw;
   height: 5vw;
   float: left;
+  filter: drop-shadow(1px 2px 1px black);
 }
 
-.oceania-top > p {
+.oceania-top>p {
   margin: 1vh;
 }
-.oceania-top > p,
+
+.oceania-top>p,
 h1 {
   text-align: center;
   font-size: xx-large;
@@ -59,7 +61,7 @@ h1 {
 .oceania-bottom {
   width: 35vw;
   height: 5vw;
-  border: solid 1px palevioletred;
+  border: solid 1px #F1E1C7;
   border-radius: 10px;
   overflow: auto;
   text-align: justify;
@@ -75,10 +77,12 @@ h1 {
   background-color: black;
   border-radius: 10px;
 }
+
 .oceania-bottom::-webkit-scrollbar-thumb {
-  background-color: palevioletred;
+  background-color: #0A104F;
   border-radius: 10px;
 }
+
 .oceania-bottom::-webkit-scrollbar-track {
   background-color: white;
   border-radius: 10px;

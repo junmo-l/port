@@ -3,18 +3,25 @@
 /** RESET AND LAYOUT
 ===================================*/
 
+article {
+  /* display: none; */
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
+}
+
 li {
   left: 0;
 }
 
 #wrap {
   margin: 0 auto;
-  max-width: 100%;
+  /* max-width: 95%; */
+  width: 36vw;
 }
 
 .bx-wrapper {
-  /* position: relative; */
+  position: relative;
   margin-bottom: 0px;
+  border-radius: 10px;
   padding: 15px;
   *zoom: 1;
   -ms-touch-action: pan-y;
@@ -22,14 +29,22 @@ li {
   overflow: hidden;
 }
 
+.slider {
+  /* width: fit-content; */
+}
+
 .slider>li {
-  height: 20vw;
-  width: 100px;
+  /* width: fit-content; */
+  /* height: fit-content; */
+  /* height: 20vw; */
+  /* width: 500px; */
 }
 
 .bx-wrapper img {
-  width: inherit;
-  height: inherit;
+  /* width: inherit; */
+  /* height: inherit; */
+  height: 20vw;
+  width: 100%;
 }
 
 .bxslider {
@@ -120,8 +135,8 @@ ul.bxslider {
 
 /* DIRECTION CONTROLS (NEXT / PREV) */
 .bx-wrapper .bx-prev {
-  left: 50px;
-  background: url("../images/chevron_left_FILL0_wght300_GRAD-25_opsz40.png") no-repeat -5px -7px;
+  left: 20px;
+  background: url("../images/chevron_left_FILL0_wght300_GRAD-25_opsz40.png") no-repeat -7px -7px;
 }
 
 .bx-wrapper .bx-prev:hover,
@@ -130,8 +145,8 @@ ul.bxslider {
 }
 
 .bx-wrapper .bx-next {
-  right: 50px;
-  background: url("../images/chevron_right_FILL0_wght300_GRAD-25_opsz40.png") no-repeat -5px -7px;
+  right: 20px;
+  background: url("../images/chevron_right_FILL0_wght300_GRAD-25_opsz40.png") no-repeat 1px -7px;
 }
 
 .bx-wrapper .bx-next:hover,

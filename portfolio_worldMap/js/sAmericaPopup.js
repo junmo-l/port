@@ -30,4 +30,14 @@ function btnSAmerica() {
   worldMapSAmerica.style.opacity = "1";
   document.body.style.backgroundColor = "aliceblue";
 }
+
+function pinOpen() {
+  document.querySelector(".pin6").style.display = "block";
+}
+function pinClose() {
+  document.querySelector(".pin6").style.display = "none";
+}
+
+sAmericaClick.addEventListener("mouseover", pinOpen);
+sAmericaClick.addEventListener("mouseout", pinClose);
 sAmericaClick.addEventListener("click", aClick);

@@ -30,4 +30,14 @@ function btnEurope() {
   worldMapEurope.style.opacity = "1";
   document.body.style.backgroundColor = "aliceblue";
 }
+
+function pinOpen() {
+  document.querySelector(".pin3").style.display = "block";
+}
+function pinClose() {
+  document.querySelector(".pin3").style.display = "none";
+}
+
+europeClick.addEventListener("mouseover", pinOpen);
+europeClick.addEventListener("mouseout", pinClose);
 europeClick.addEventListener("click", aClick);

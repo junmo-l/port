@@ -30,4 +30,15 @@ function btnAfrica() {
   worldMapAfrica.style.opacity = "1";
   document.body.style.backgroundColor = "aliceblue";
 }
+
+function pinOpen() {
+  document.querySelector(".pin4").style.display = "block";
+}
+function pinClose() {
+  document.querySelector(".pin4").style.display = "none";
+}
+
+africaClick.addEventListener("mouseover", pinOpen);
+africaClick.addEventListener("mouseout", pinClose);
+
 africaClick.addEventListener("click", aClick);
