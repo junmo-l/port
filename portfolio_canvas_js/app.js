@@ -13,7 +13,8 @@ const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
 const CANVAS_WIDTH = 800;
 const CANVAS_HEIGHT = 800;
-let bgColor = (document.body.style.backgroundColor = "beige");
+// let bgColor = (document.body.style.backgroundColor = "beige");
+//배경색 베이지
 canvas.width = 800;
 canvas.height = 800;
 ctx.lineWidth = lintWidth.value;
@@ -52,10 +53,10 @@ function onColorClick(event) {
 function onModeClick() {
   if (isFilling) {
     isFilling = false;
-    modeBtn.innerText = "Fill";
+    modeBtn.innerText = "🩸 Fill 🩸";
   } else {
     isFilling = true;
-    modeBtn.innerText = "Draw";
+    modeBtn.innerText = "🖌️ Draw 🖌️";
   }
 }
 function onCanvasClick() {
@@ -64,12 +65,12 @@ function onCanvasClick() {
   }
 }
 function onDestroyClick() {
-  ctx.fillStyle = bgColor;
+  ctx.fillStyle = "white";
   ctx.fillRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
   fileInput.value = null;
 }
 function onEraserClick() {
-  ctx.strokeStyle = bgColor;
+  ctx.strokeStyle = "white";
   isFilling = false;
   modeBtn.innerText = "Fill";
 }
